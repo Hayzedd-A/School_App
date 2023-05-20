@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../resources/jquery-ui-1.13.2/jquery-ui.css">
+    <link rel="stylesheet" href="../resources/jquery-ui-1.13.2/jquery-ui.structure.css">
+    <link rel="stylesheet" href="../resources/jquery-ui-1.13.2/jquery-ui.theme.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfobject/2.2.6/pdfobject.min.js"></script>
+    <link rel="stylesheet" href="result.css">
+    <title>Result</title>
+</head>
+<body>
+    <div class="container">
+        <div class="sideBar">
+            <div class="classLevels" id="accordion">
+                <h3>JSS 1</h3>
+                <div class="classLevel">
+                    <ul>
+                        <li>First term</li>
+                        <li>Second term</li>
+                        <li>Third term</li>
+                    </ul>
+                </div>
+                <h3>JSS 2</h3>
+                <div class="classLevel">
+                    <ul>
+                        <li>First term</li>
+                        <li>second term</li>
+                        <li>third term</li>
+                    </ul>
+                </div>
+            
+            </div>
+        </div>
+        <div class="mainResult">
+            <div class="resultPDF"></div>
+        </div>
+    </div>
+    <script src="../jquery-3.6.1.min.js"></script>
+    <script src="../resources/jquery-ui-1.13.2/jquery-ui.js"></script>
+    <script src="../resources/jquery-ui-1.13.2/jquery-ui.min.js"></script>
+    <script>
+        var options = {
+            pdfOpenParams: {
+            zoom: "Fit"
+            }
+        }
+        PDFObject.embed("database.pdf", ".resultPDF", options);
+        $( function() {
+  $( "#accordion" ).accordion({
+    "collapsible": true,
+    "active": 'none',
+    "heightStyle": 'content'
+  });
+});
+    </script>
+</body>
+</html>

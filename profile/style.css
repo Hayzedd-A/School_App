@@ -1,0 +1,177 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  margin: 30px;
+  display: grid;
+  gap: 1.5em;
+  grid-template-columns: 20% 45% 30%;
+}
+@media only screen and (max-width: 968px) {
+  .container {
+    grid-template-columns: 63% 35%;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .container {
+    display: block;
+  }
+}
+
+.personalDetails {
+  display: grid;
+  margin-top: -1.7em;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+@media only screen and (max-width: 968px) {
+  .personalDetails {
+    margin-top: 0;
+    display: flex;
+    grid-column: 1/3;
+    gap: 3em;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .personalDetails {
+    display: grid;
+  }
+}
+.personalDetails .profileName {
+  position: relative;
+  top: -3em;
+}
+@media only screen and (max-width: 968px) {
+  .personalDetails .profileName {
+    position: unset;
+  }
+}
+.personalDetails .profilePic {
+  justify-self: center;
+  padding: 5px;
+  border: 2px solid gray;
+  width: -moz-min-content;
+  width: min-content;
+}
+.personalDetails .profilePic img {
+  width: 100px;
+}
+.personalDetails .profileLinks ul {
+  display: grid;
+  gap: 1em;
+  justify-content: center;
+  padding: 0;
+  list-style: none;
+}
+.personalDetails .profileLinks ul li {
+  display: grid;
+  animation: transform 0.5s;
+  transform: scale(1);
+  grid-template-columns: 40px 1fr;
+  align-items: center;
+  text-align: left;
+  justify-content: space-around;
+}
+.personalDetails .profileLinks ul li:hover {
+  transform: scale(1.2);
+}
+.personalDetails .profileLinks ul li a {
+  text-decoration: none;
+}
+.personalDetails .profileLinks img {
+  width: 30px;
+}
+
+.profileDetails h2 {
+  display: inline-block;
+}
+.profileDetails img {
+  transform: scale(1.4);
+  float: right;
+  margin: 20px 10px;
+  cursor: pointer;
+}
+.profileDetails img:active {
+  transform: scale(1.2);
+}
+.profileDetails .detailsContainer {
+  display: grid;
+  gap: 1em;
+  grid-template-columns: repeat(2, 1fr);
+}
+.profileDetails .detailsContainer .eachElement {
+  display: grid;
+}
+.profileDetails .detailsContainer .eachElement.fullSpan {
+  grid-column: span 2;
+}
+.profileDetails .detailsContainer .eachElement span {
+  border: 1px solid gray;
+  border-radius: 3px;
+  padding: 3px 5px;
+}
+
+.academicDetails .subjects {
+  margin-top: 2em;
+}
+.academicDetails .CourseContent {
+  display: grid;
+  gap: 5px;
+}
+.academicDetails .attendanceDetails {
+  padding: 5px;
+}
+.academicDetails .attendanceDetails table {
+  width: 100%;
+}
+.academicDetails .attendanceDetails thead {
+  background-color: lightblue;
+}
+.academicDetails .attendanceDetails tr {
+  display: flex;
+  justify-content: space-between;
+}
+.academicDetails .attendanceDetails tr td {
+  width: 4em;
+}
+.academicDetails .attendanceDetails tbody > tr:nth-child(even) {
+  background-color: lightblue;
+}
+.academicDetails .attendanceDetails tbody tr {
+  cursor: pointer;
+}
+.academicDetails .attendanceDetails tbody tr:hover {
+  background-color: #b6bec6;
+}
+
+.accordion ul {
+  padding: 0;
+  display: grid;
+  gap: 1em;
+}
+.accordion ul li {
+  list-style: none;
+}
+
+.classLevels {
+  padding: 0.5em !important;
+}
+
+.classLevel ul li {
+  cursor: pointer;
+  transition: all linear 0.1s;
+}
+.classLevel ul li:hover {
+  transform: scale(1.1);
+}
+.classLevel ul li:active {
+  transform: scale(1);
+}
+
+.resultPDF {
+  height: 90vh;
+}/*# sourceMappingURL=style.css.map */

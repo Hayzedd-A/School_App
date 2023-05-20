@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../resources/jquery-ui-1.13.2/jquery-ui.css">
+    <link rel="stylesheet" href="../resources/jquery-ui-1.13.2/jquery-ui.structure.css">
+    <script src="../resources/pdfobject.min.js"></script>
+    <link rel="stylesheet" href="../resources/jquery-ui-1.13.2/jquery-ui.theme.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Profile</title>
+</head>
+<body>
+    <div class="container">
+        <div class="personalDetails">
+            <div class="profilePic"><img src="../resources/icons/profile_avatar" alt=""></div>
+            <div class="profileName">
+                <h3>Olamide Pelumi</h3>
+                <h3>2022/002/34</h3>
+                <h4>Senior Secondary School 2</h4>
+            </div>
+        </div>
+        <div class="profileDetails">
+            <h2>Profile Details</h2>
+            <img id="edit" src="../resources/icons/edit.svg" alt="">
+            <div class="detailsContainer">
+                <div class="eachElement">
+                    <small>Surname</small>
+                    <span>Father Name</span>
+                </div>
+                <div class="eachElement">
+                    <small>First name</small>
+                    <span>First Name</span>
+                </div>
+                <div class="eachElement">
+                    <small>Last name</small>
+                    <span>Last Name</span>
+                </div>
+                <div class="eachElement">
+                    <small>Gender</small>
+                    <span>Male</span>
+                </div>
+                <div class="eachElement">
+                    <small>Date of birth</small>
+                    <span>21-02-2001</span>
+                </div>
+                <div class="eachElement">
+                    <small>Date of registration</small>
+                    <span>13-5-2023</span>
+                </div>
+                <div class="fullSpan eachElement">
+                    <small>Address</small>
+                    <span>7, olarenwaju bolarinwa str, okobi, ijagemo</span>
+                </div>
+                <div class="eachElement">
+                    <small>Guardian's name</small>
+                    <span>Guardian Name</span>
+                </div>
+                <div class="eachElement">
+                    <small>Phone Number</small>
+                    <span>08081602424</span>
+                </div>
+                <div class="fullSpan eachElement">
+                    <small>Email</small>
+                    <span>adebayoazeez37@yahoo.com</span>
+                </div>
+                <div class="fullSpan eachElement">
+                    <small>Guardian address</small>
+                    <span>7, olarenwaju bolarinwa str, okobi, ijagemo</span>
+                </div>
+            </div>
+        </div>
+        <div class="academicDetails">
+            <h2>Academics Details</h2>
+            <div class="subjects accordion">
+                <h3>Courses</h3>
+                <div class="CourseContent">
+                    <span>Mathematics</span>
+                    <span>English</span>
+                    <span>Biology</span>
+                    <span>Civic Education</span>
+                    <span>Economics</span>
+                    <span>Computer Science</span>
+                    <span>Chemistry</span>
+                    <span>PhysieachElementcs</span>
+                    <span>Food And Nutrition</span>
+                    <span>Goegraphy</span>
+                    <span>Fishery</span>
+                    <span>Tourism</span>
+                    <span>Further Mathematics</span>
+                    <span>Data Processing</span>
+                    <span>Animal Husbandary</span>
+                </div>
+
+                <h3>Attendance</h3>
+                <div class="attendanceDetails">
+                    <table>
+                        <thead>
+                            <tr>
+                                <td>Term</td>
+                                <td>Total</td>
+                                <td>Present</td>
+                                <td>Absent</td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <a href="../index.html">
+                            <tr class="first">
+                                <td>First</td>
+                                <td>108</td>
+                                <td>96</td>
+                                <td>12</td>                                
+                            </tr>
+                            </a>
+                            <tr class="second">
+                                <td>Second</td>
+                                <td>108</td>
+                                <td>92</td>
+                                <td>18</td>
+                            </tr>
+                            <tr class="third">
+                                <td>Third</td>
+                                <td>78</td>
+                                <td>70</td>
+                                <td>8</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <h3>Result</h3>
+                <div class="classLevels accordion" id="results">
+                    <h3>JSS 1</h3>
+                    <div class="classLevel">
+                        <ul>
+                            <li class="eachResult" id="jss1_first">First term</li>
+                            <li class="eachResult" id="jss1_second">Second term</li>
+                            <li class="eachResult" id="jss1_third">Third term</li>
+                        </ul>
+                    </div>
+                    <h3>JSS 2</h3>
+                    <div class="classLevel">
+                        <ul>
+                            <li class="eachResult" id="jss2_first">First term</li>
+                            <li class="eachResult" id="jss2_second">second term</li>
+                            <li class="eachResult" id="jss2_third">third term</li>
+                        </ul>
+                    </div>
+                
+                </div>
+
+                <h3>Activities</h3>
+                <div class="activitiesDetail">
+                    <ul>
+                        <li>Food prefect</li>
+                        <li>Member of the Pink House</li>
+                        <li>Running for the 200m race</li>
+                        <li>Participant of the dancing team</li>
+                        <li>Member of the debate club</li>
+                    </ul>
+                </div>
+                
+                <h3>Review</h3>
+                <div class="reviewDetails"></div>
+            </div>
+            
+        </div>
+
+        <div class="mainResult">
+            <div class="resultPDF"></div>
+        </div>
+
+    </div>
+    <script src="../jquery-3.6.1.min.js"></script>
+    <script src="../resources/jquery-ui-1.13.2/jquery-ui.js"></script>
+    <script src="../resources/jquery-ui-1.13.2/jquery-ui.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
