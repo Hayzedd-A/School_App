@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <style>
+      body {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+      }
+
+      .container {
+        display: grid;
+        align-items: center;
+      }
+
+      h1 {
+        color: rgb(81, 81, 141);
+        text-align: center;
+        margin-bottom: 0;
+      }
+      h5 {
+        margin-top: 0;
+      }
+
+      h3 {
+        text-align: center;
+      }
+      form {
+        display: grid;
+        gap: 1em;
+        justify-items: center;
+      }
+
+      fieldset {
+        display: grid;
+        gap: 1rem;
+        padding: 1em;
+        border-radius: 1em;
+        box-shadow: 2px 2px 7px 1px rgb(209, 199, 199);
+        /* justify-content: space-between; */
+      }
+
+      fieldset label {
+        display: grid;
+        grid-template-columns: 10rem 1fr;
+        align-items: center;
+        /* flex: 40px; */
+      }
+
+      fieldset input {
+        height: 2em;
+        border-radius: 1em;
+        border: 1px solid rgb(26, 141, 164);
+        padding: 1px 1em;
+        font-size: larger;
+      }
+      fieldset input:active {
+        border: 1px solid goldenrod;
+      }
+      form > input:active {
+        transform: scale(0.9);
+      }
+      form > input:hover {
+        background-color: rgb(26, 141, 164);
+        color: white;
+      }
+      form > input {
+        width: 10em;
+        height: 2em;
+        border: 0.2px solid rgb(26, 141, 164);
+        color: rgb(26, 141, 164);
+        cursor: pointer;
+        border-radius: 1em;
+        font-size: larger;
+      }
+      a {
+        text-decoration: none;
+        color: rgb(26, 141, 164);
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+    <h1>HANS PRIVATE SCHOOL</h1>
+    <address>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla, dolores?</address>
+    <h3>Enter Credentials</h3>
+      <form action="register_student/">
+        <fieldset>
+          <label for="username"
+            >Username:
+            <input type="text" />
+          </label>
+          <label for="password"
+            >Password:
+            <input type="password" />
+          </label>
+        </fieldset>
+        <input type="submit" value="Login" />
+        <a id="forget" href="#">Forget Password?</a>
+    </form>
+    </div>
+    <script src="jquery-3.6.1.min.js"></script>
+    <script>
+        $('#forget').click(function () {
+            $(this).text('Contact your admin for password recovery')
+            $(this).css('color', 'red')
+        })
+    </script>
+  </body>
+</html>

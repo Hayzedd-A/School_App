@@ -1,0 +1,178 @@
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  width: 97vw;
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  width: 90%;
+  max-width: 800px;
+  padding-bottom: 5em;
+  min-width: 650px;
+}
+
+.heading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.heading h1 {
+  margin-bottom: 0;
+}
+.heading h5 {
+  margin-top: 0;
+}
+
+form {
+  display: flex;
+  gap: 2em;
+  flex-direction: column;
+}
+
+fieldset {
+  display: grid;
+  gap: 1em;
+  padding-bottom: 2em;
+}
+fieldset label {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+fieldset label input {
+  border: 1px solid gray;
+  border-radius: 3px;
+}
+fieldset label > input,
+fieldset label span {
+  width: 30em;
+  height: 2em;
+  display: flex;
+  align-items: center;
+}
+fieldset label > input > input:not(fieldset label > input > input:first-of-type,
+fieldset label span > input:first-of-type),
+fieldset label span > input:not(fieldset label > input > input:first-of-type,
+fieldset label span > input:first-of-type) {
+  margin-left: 5em;
+}
+fieldset label select {
+  width: 30em;
+  height: 2em;
+}
+fieldset label span {
+  width: 25em;
+}
+
+.subjectTitle {
+  width: -moz-max-content !important;
+  width: max-content !important;
+}
+
+label[for=subjectCombination] {
+  flex-direction: column;
+  overflow: hidden;
+  height: 400px;
+}
+label[for=subjectCombination] input {
+  position: relative;
+  left: -20px;
+  top: 20px;
+  width: -moz-min-content;
+  width: min-content;
+  margin-left: unset;
+}
+label[for=subjectCombination] > span {
+  width: -moz-min-content;
+  width: min-content;
+  height: -moz-max-content;
+  height: max-content;
+}
+
+#submit {
+  width: 15em;
+  padding: 0;
+  height: 3em;
+  border: 1px solid blueviolet;
+  font-size: x-large;
+  border-radius: 2em;
+  align-self: center;
+}
+#submit:hover {
+  background-color: #1a3248;
+  color: white;
+}
+
+.error {
+  display: none;
+  align-self: center;
+  font-weight: bold;
+  color: red;
+}
+
+.subjectCombination {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  transition: 1s ease-in-out left;
+  width: 340vw;
+  position: relative;
+  left: 0;
+  align-self: flex-start;
+}
+.subjectCombination div {
+  display: grid;
+  grid-template-columns: repeat(4, 190px);
+  padding-left: 2em;
+}
+.subjectCombination div div {
+  width: 680px;
+}
+.subjectCombination div span {
+  display: grid;
+  height: -moz-max-content;
+  height: max-content;
+  width: unset;
+}
+.subjectCombination div span input {
+  margin-left: unset !important;
+}
+
+body.PhotoCapturing section {
+  margin: 2em;
+  display: grid;
+  gap: 1em;
+  align-items: center;
+}
+body.PhotoCapturing .result {
+  display: none;
+}
+body.PhotoCapturing section#fileUpload {
+  display: flex;
+}
+body.PhotoCapturing .video {
+  height: 580px;
+  width: 520px;
+  justify-self: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  overflow: hidden;
+}
+body.PhotoCapturing .btn {
+  padding: 1em 0;
+}
+body.PhotoCapturing #addFile {
+  grid-column-start: 2;
+}
+body.PhotoCapturing .uploadContainer {
+  flex-basis: 80%;
+}
+body.PhotoCapturing .uploadContainer .elementContainer {
+  margin: 1em 0;
+}
+body.PhotoCapturing .uploadContainer select {
+  width: 20em;
+  height: 2em;
+}/*# sourceMappingURL=style.css.map */

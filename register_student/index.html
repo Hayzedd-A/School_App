@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../flatpickr/flatpickr.css">
+    <link rel="stylesheet" href="style.css">
+    <title>register_student</title>
+</head>
+
+<body>
+    <div class="container">
+        <section class="heading">
+            <h1>HANS PRIVATE SCHOOL</h1>
+            <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla, dolores?</h5>
+            <h3>Register Student</h3>
+        </section>
+
+        <form action="biometric_verification.html">
+            <fieldset>
+                <h3>Personal Details</h3>
+                <label for="lastName">Last Name
+                    <input class="name" type="text" id="lastName" placeholder="Last Name">
+                </label>
+                <label for="middleName">Middle Name
+                    <input class="name" type="text" id="middleName" placeholder="Middle Name">
+                </label>
+                <label for="firstName">First Name
+                    <input class="name" type="text" id="firstName" placeholder="First Name">
+                </label>
+                <label for="address">Address
+                    <input type="address" id="address" placeholder="Address">
+                </label>
+                <label for="gender">Gender
+                    <span>
+                        <input type="radio" class="gender" value="male" name="gender">Male
+                        <input type="radio" class="gender" value="female" name="gender">Female
+                    </span>
+                </label>
+                <label for="dateOfBirth">Date Of Birth
+                    <input type="date" class="form-control input" name="dateOfBirth" id="dateOfBirth">
+                </label>
+            </fieldset>
+            <fieldset>
+                <h3>Parent or Guardian Details</h3>
+                <label for="guardianName">Parent / Guardian's Name
+                    <input type="text" id="guardianName" placeholder="Guardian Full Name">
+                </label>
+                <label for="phoneNumber">Phone Number
+                    <input type="number" id="phoneNumber" placeholder="Phone Number">
+                </label>
+                <label for="email">Email Address
+                    <input type="email" id="emailAddress" placeholder="e.g  email@domain.com">
+                </label>
+                <label for="address">Address
+                    <input type="address" id="guardianAddress" placeholder="Guardian Address">
+                </label>
+            </fieldset>
+            <fieldset>
+                <h3>Academic Details</h3>
+                <label for="date">Date
+                    <input type="date" name="date" id="date">
+                </label>
+                <label for="classLevel">Level
+                    <select class="classCategory" id="classCategory">
+                        <option name="kindergaten" value="kindergaten" class="category primary kindergaten">Kindergaten
+                        </option>
+                        <option name="nursery" value="nursery" class="category primary nursery">Nursery</option>
+                        <option name="lowerPrimary" value="lowerPrimary" class="category primary primary">Primary
+                        </option>
+                        <option name="juniorSecondary" value="juniorSecondary" class="category secondary junior">Junior
+                            Secondary</option>
+                        <option name="seniorSecondary" value="seniorSecondary" class="category secondary senior">Senoir
+                            Secondary</option>
+                    </select>
+                </label>
+                <label for="class">Class
+                    <select name="class" id="classClass">
+                        <option class="primary kindergaten" value="kindergaten1">Kindergaten1</option>
+                        <option class="primary kindergaten" value="kindergaten2">Kindergaten2</option>
+                        <option class="primary nursery" value="nursery1">Nursery1</option>
+                        <option class="primary nursery" value="nursery2">Nursery2</option>
+                        <option class="primary primary" value="pry1">Primary 1</option>
+                        <option class="primary primary" value="pry2">Primary 2</option>
+                        <option class="primary primary" value="pry3">Primary 3</option>
+                        <option class="primary primary" value="pry4">Primary 4</option>
+                        <option class="primary primary" value="pry5">Primary 5</option>
+                        <option id="selected" class="secondary junior" value="jss1">Junior secondary 1</option>
+                        <option class="secondary junior" value="jss2">Junior secondary 2</option>
+                        <option class="secondary junior" value="jss3">Junior secondary 3</option>
+                        <option class="secondary senior" value="sss1">Senior secondary 1</option>
+                        <option class="secondary senior" value="sss2">Senior secondary 2</option>
+                        <option class="secondary senior" value="sss3">Senior secondary 3</option>
+                    </select>
+                </label>
+                <label for="department" id="departments">Department
+                    <span>
+                        <input type="radio" class="department" name="department" value="science">Science
+                        <input type="radio" class="department" name="department" value="commercial">Commercial
+                        <input type="radio" class="department" name="department" value="art">Art
+                    </span>
+                </label>
+                <label for="subjectCombination" class="subjectCombinationContainer">
+                    <span class="subjectTitle">Subject Combination</span>
+                    <div class="subjectCombination">
+                        <div class="nursery subject">
+                            <span class="general">
+                                <input type="checkbox" name="mathematics" value="mathematics">Mathematics
+                                <input type="checkbox" name="english" value="english">English
+                                <input type="checkbox" name="biology" value="biology">Biology
+                                <input type="checkbox" name="civicEducation" value="civicEducation">Civic Education
+                                <input type="checkbox" name="economics" value="economics">Economics
+                                <input type="checkbox" name="computerScience" value="computerScience">Computer
+                                Science
+                            </span>
+
+                            <span class="departments science">
+                                <input type="checkbox" name="chemistry" value="chemistry">Chemistry
+                                <input type="checkbox" name="physics" value="physics">Physics
+                                <input type="checkbox" name="foodAndNutrition" value="foodAndNutrition">Food And
+                                Nutrition
+                                <input type="checkbox" name="goegraphy" value="goegraphy">Goegraphy
+                                <input type="checkbox" name="fishery" value="fishery">Fishery
+                                <input type="checkbox" name="tourism" value="tourism">Tourism
+                                <input type="checkbox" name="furtherMathematics" value="furtherMathematics">Further
+                                Mathematics
+                                <input type="checkbox" name="dataProcessing" value="dataProcessing">Data Processing
+                                <input type="checkbox" name="animalHusbandary" value="animalHusbandary">Animal
+                                Husbandary
+                            </span>
+
+                            <span class="departments commercial">
+                                <input type="checkbox" name="commerce" value="commerce">Commerce
+                                <input type="checkbox" name="gorvernment" value="gorvernment">Gorvernment
+                                <input type="checkbox" name="accounting" value="accounting">Accounting
+                                <input type="checkbox" name="yorubaLanguage" value="yorubaLanguage">Yoruba Language
+                            </span>
+
+                            <span class="departments art">
+                                <input type="checkbox" name="visualArt" value="visualArt">Visual Art
+                                <input type="checkbox" name="literature" value="literature">Literature
+                                <input type="checkbox" name="yoruba" value="yoruba">Yoruba
+                                <input type="checkbox" name="dieAndBleaching" value="dieAndBleaching">Die And
+                                Bleaching
+                            </span>
+                        </div>
+                        <div class="primary subject">
+                            <span class="general">
+                                <input type="checkbox" name="mathematics" value="mathematics">Mathematics
+                                <input type="checkbox" name="english" value="english">English
+                                <input type="checkbox" name="biology" value="biology">Biology
+                                <input type="checkbox" name="civicEducation" value="civicEducation">Civic Education
+                                <input type="checkbox" name="economics" value="economics">Economics
+                                <input type="checkbox" name="computerScience" value="computerScience">Computer
+                                Science
+                            </span>
+
+                            <span class="departments science">
+                                <input type="checkbox" name="chemistry" value="chemistry">Chemistry
+                                <input type="checkbox" name="physics" value="physics">Physics
+                                <input type="checkbox" name="foodAndNutrition" value="foodAndNutrition">Food And
+                                Nutrition
+                                <input type="checkbox" name="goegraphy" value="goegraphy">Goegraphy
+                                <input type="checkbox" name="fishery" value="fishery">Fishery
+                                <input type="checkbox" name="tourism" value="tourism">Tourism
+                                <input type="checkbox" name="furtherMathematics" value="furtherMathematics">Further
+                                Mathematics
+                                <input type="checkbox" name="dataProcessing" value="dataProcessing">Data Processing
+                                <input type="checkbox" name="animalHusbandary" value="animalHusbandary">Animal
+                                Husbandary
+                            </span>
+
+                            <span class="departments commercial">
+                                <input type="checkbox" name="commerce" value="commerce">Commerce
+                                <input type="checkbox" name="gorvernment" value="gorvernment">Gorvernment
+                                <input type="checkbox" name="accounting" value="accounting">Accounting
+                                <input type="checkbox" name="yorubaLanguage" value="yorubaLanguage">Yoruba Language
+                            </span>
+
+                            <span class="departments art">
+                                <input type="checkbox" name="visualArt" value="visualArt">Visual Art
+                                <input type="checkbox" name="literature" value="literature">Literature
+                                <input type="checkbox" name="yoruba" value="yoruba">Yoruba
+                                <input type="checkbox" name="dieAndBleaching" value="dieAndBleaching">Die And
+                                Bleaching
+                            </span>
+                        </div>
+                        <div class="junior subject">
+                            <span class="general">
+                                <input type="checkbox" name="mathematics" value="mathematics">Mathematics
+                                <input type="checkbox" name="english" value="english">English
+                                <input type="checkbox" name="biology" value="biology">Biology
+                                <input type="checkbox" name="civicEducation" value="civicEducation">Civic Education
+                                <input type="checkbox" name="economics" value="economics">Economics
+                                <input type="checkbox" name="computerScience" value="computerScience">Computer
+                                Science
+                            </span>
+
+                            <span class="departments science">
+                                <input type="checkbox" name="chemistry" value="chemistry">Chemistry
+                                <input type="checkbox" name="physics" value="physics">Physics
+                                <input type="checkbox" name="foodAndNutrition" value="foodAndNutrition">Food And
+                                Nutrition
+                                <input type="checkbox" name="goegraphy" value="goegraphy">Goegraphy
+                                <input type="checkbox" name="fishery" value="fishery">Fishery
+                                <input type="checkbox" name="tourism" value="tourism">Tourism
+                                <input type="checkbox" name="furtherMathematics" value="furtherMathematics">Further
+                                Mathematics
+                                <input type="checkbox" name="dataProcessing" value="dataProcessing">Data Processing
+                                <input type="checkbox" name="animalHusbandary" value="animalHusbandary">Animal
+                                Husbandary
+                            </span>
+
+                            <span class="departments commercial">
+                                <input type="checkbox" name="commerce" value="commerce">Commerce
+                                <input type="checkbox" name="gorvernment" value="gorvernment">Gorvernment
+                                <input type="checkbox" name="accounting" value="accounting">Accounting
+                                <input type="checkbox" name="yorubaLanguage" value="yorubaLanguage">Yoruba Language
+                            </span>
+
+                            <span class="departments art">
+                                <input type="checkbox" name="visualArt" value="visualArt">Visual Art
+                                <input type="checkbox" name="literature" value="literature">Literature
+                                <input type="checkbox" name="yoruba" value="yoruba">Yoruba
+                                <input type="checkbox" name="dieAndBleaching" value="dieAndBleaching">Die And
+                                Bleaching
+                            </span>
+                        </div>
+                        <div class="senior subject">
+                            <span class="general">
+                                <input type="checkbox" name="mathematics" value="mathematics">Mathematics
+                                <input type="checkbox" name="english" value="english">English
+                                <input type="checkbox" name="biology" value="biology">Biology
+                                <input type="checkbox" name="civicEducation" value="civicEducation">Civic Education
+                                <input type="checkbox" name="economics" value="economics">Economics
+                                <input type="checkbox" name="computerScience" value="computerScience">Computer
+                                Science
+                            </span>
+
+                            <span class="departments science">
+                                <input type="checkbox" name="chemistry" value="chemistry">Chemistry
+                                <input type="checkbox" name="physics" value="physics">Physics
+                                <input type="checkbox" name="foodAndNutrition" value="foodAndNutrition">Food And
+                                Nutrition
+                                <input type="checkbox" name="goegraphy" value="goegraphy">Goegraphy
+                                <input type="checkbox" name="fishery" value="fishery">Fishery
+                                <input type="checkbox" name="tourism" value="tourism">Tourism
+                                <input type="checkbox" name="furtherMathematics" value="furtherMathematics">Further
+                                Mathematics
+                                <input type="checkbox" name="dataProcessing" value="dataProcessing">Data Processing
+                                <input type="checkbox" name="animalHusbandary" value="animalHusbandary">Animal
+                                Husbandary
+                            </span>
+
+                            <span class="departments commercial">
+                                <input type="checkbox" name="commerce" value="commerce">Commerce
+                                <input type="checkbox" name="gorvernment" value="gorvernment">Gorvernment
+                                <input type="checkbox" name="accounting" value="accounting">Accounting
+                                <input type="checkbox" name="yorubaLanguage" value="yorubaLanguage">Yoruba Language
+                            </span>
+
+                            <span class="departments art">
+                                <input type="checkbox" name="visualArt" value="visualArt">Visual Art
+                                <input type="checkbox" name="literature" value="literature">Literature
+                                <input type="checkbox" name="yoruba" value="yoruba">Yoruba
+                                <input type="checkbox" name="dieAndBleaching" value="dieAndBleaching">Die And
+                                Bleaching
+                            </span>
+                        </div>
+                    </div>
+                </label>
+            </fieldset>
+            <input type="submit" value="Submit" id="submit">
+            <div class="error">Some input field are empty <br></div>
+        </form>
+    </div>
+    <script src="../jquery-3.6.1.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

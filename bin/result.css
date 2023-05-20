@@ -1,0 +1,36 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+}
+
+body {
+  padding: 2em;
+}
+
+.container {
+  display: grid;
+  gap: 5em;
+  grid-template-columns: 1fr 3fr;
+}
+
+.resultPDF {
+  height: 90vh;
+}
+
+.classLevel ul {
+  display: grid;
+  padding: 0;
+  gap: 1em;
+}
+.classLevel ul li {
+  cursor: pointer;
+  transition: all linear 0.1s;
+}
+.classLevel ul li:hover {
+  transform: scale(1.1);
+}
+.classLevel ul li:active {
+  transform: scale(1);
+}/*# sourceMappingURL=result.css.map */
