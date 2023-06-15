@@ -38,6 +38,7 @@ fieldset {
         justify-content: space-between;
         input {
             border: 1px solid gray;
+            height: 2em;
             border-radius: 3px;
         }
         & > input,
@@ -122,7 +123,17 @@ label[for="subjectCombination"] {
         }
     }
 }
-
+table {
+    white-space: nowrap;
+    flex-basis: 25em;
+    height: 3em;
+    input {
+        width: 100%;
+    }
+}
+#accNumber {
+    margin-left: 2.5em;
+}
 body.PhotoCapturing {
     section {
         margin: 2em;

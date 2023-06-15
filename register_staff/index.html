@@ -70,9 +70,9 @@
                         </thead>
                         <tbody>
                             <tr>
-                                <td></td>
-                                <td></td>
-                                <td></td>
+                                <td><input type="text"></td>
+                                <td><input type="text"></td>
+                                <td><input type="text"></td>
                             </tr>
                         </tbody>
                     </table>
@@ -82,55 +82,65 @@
                         <thead>
                             <tr>
                                 <td>Start Date</td>
-                                <td>Start Date</td>
                                 <td>End Date</td>
-                                <td>Years Attended</td>
-                                <td>Certification</td>
+                                <td>Employer Company</td>
+                                <td>Job</td>
                             </tr>
                         </thead>
                         <tbody>
                             <tr>
-                                <td></td>
-                                <td></td>
-                                <td></td>
+                                <td><input type="text"></td>
+                                <td><input type="text"></td>
+                                <td><input type="text"></td>
+                                <td><input type="text"></td>
                             </tr>
                         </tbody>
                     </table>
                 </label>
                 <label for="classLevel">Level
                     <select name="classLevel" id="classLevel">
-                        <option value="null">-- select Level --</option>
                         <option value="Primary">Primary</option>
                         <option value="Secondary">Secondary</option>
                     </select>
                 </label>
                 <label for="classAssign">Class Assign
                     <select name="classAssign" id="classAssign">
-                        <option value="pry1">Crech</option>
-                        <option value="pry1">Kindergaten 1</option>
-                        <option value="pry1">Kindergaten 2</option>
-                        <option value="pry1">Nursery 1</option>
-                        <option value="pry1">Nursery 2</option>
-                        <option value="pry1">Primary 1</option>
-                        <option value="pry1">Primary 2</option>
-                        <option value="pry1">Primary 3</option>
-                        <option value="pry1">Primary 4</option>
-                        <option value="pry1">Primary 5</option>
-                        <option value="pry1">Primary 6</option>
-                        <option value="pry1">JSS 1</option>
-                        <option value="pry1">JSS 2</option>
-                        <option value="pry1">JSS 3</option>
-                        <option value="pry1">SSS 1</option>
-                        <option value="pry1">SSS 2</option>
-                        <option value="pry1">SSS 3</option>
+                        <option class="Primary" value="crech">Crech</option>
+                        <option class="Primary" value="kindergaten1">Kindergaten 1</option>
+                        <option class="Primary" value="kindergaten2">Kindergaten 2</option>
+                        <option class="Primary" value="nursery1">Nursery 1</option>
+                        <option class="Primary" value="nursery2">Nursery 2</option>
+                        <option class="Primary" value="primary1">Primary 1</option>
+                        <option class="Primary" value="primary2">Primary 2</option>
+                        <option class="Primary" value="primary3">Primary 3</option>
+                        <option class="Primary" value="primary4">Primary 4</option>
+                        <option class="Primary" value="primary5">Primary 5</option>
+                        <option class="Primary" value="primary6">Primary 6</option>
+                        <option class="Secondary" value="jss1">JSS 1</option>
+                        <option class="Secondary" value="jss2">JSS 2</option>
+                        <option class="Secondary" value="jss3">JSS 3</option>
+                        <option class="Secondary" value="sss1">SSS 1</option>
+                        <option class="Secondary" value="sss2">SSS 2</option>
+                        <option class="Secondary" value="sss3">SSS 3</option>
                     </select>
                 </label>
                 <label for="subjectTeaching">
 
                 </label>
+                <label for="accountDetails">Account Details
+                    <span>
+                        <input type="text" id="bank" placeholder="Bank Name">
+                        <input type="number" id="accNumber" placeholder="Account Number">
+                    </span>
+                    
+                </label>
             </fieldset>
         </form>
     </div>
+    <script src="../jquery-3.6.1.min.js"></script>
+    <script src="script.js"></script>
+
+
 </body>
 
 </html>

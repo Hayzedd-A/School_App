@@ -42,6 +42,7 @@ fieldset label {
 }
 fieldset label input {
   border: 1px solid gray;
+  height: 2em;
   border-radius: 3px;
 }
 fieldset label > input,
@@ -136,6 +137,19 @@ label[for=subjectCombination] > span {
 }
 .subjectCombination div span input {
   margin-left: unset !important;
+}
+
+table {
+  white-space: nowrap;
+  flex-basis: 25em;
+  height: 3em;
+}
+table input {
+  width: 100%;
+}
+
+#accNumber {
+  margin-left: 2.5em;
 }
 
 body.PhotoCapturing section {
